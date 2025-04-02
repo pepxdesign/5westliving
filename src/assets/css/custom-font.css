@@ -7,3 +7,42 @@
          url('../fonts/ClashGroteskSemibold.ttf') format('truetype'),
          url('../fonts/ClashGroteskSemibold.svg#ClashGroteskSemibold') format('svg');
 }
+
+@font-face {
+    font-family: 'TyrosPro';
+    src: url('../fonts/TyrosPro/TyrosPro-Regular.eot');
+    src: url('../fonts/TyrosPro/TyrosPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TyrosPro/TyrosPro-Regular.woff2') format('woff2'),
+        url('../fonts/TyrosPro/TyrosPro-Regular.woff') format('woff'),
+        url('../fonts/TyrosPro/TyrosPro-Regular.ttf') format('truetype'),
+        url('../fonts/TyrosPro/TyrosPro-Regular.svg#TyrosPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeadstockSans';
+    src: url('../fonts/Headstock/HeadstockSansThinItalic.eot');
+    src: url('../fonts/Headstock/HeadstockSansThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Headstock/HeadstockSansThinItalic.woff2') format('woff2'),
+        url('../fonts/Headstock/HeadstockSansThinItalic.woff') format('woff'),
+        url('../fonts/Headstock/HeadstockSansThinItalic.ttf') format('truetype'),
+        url('../fonts/Headstock/HeadstockSansThinItalic.svg#HeadstockSansThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeadstockSans';
+    src: url('../fonts/Headstock/HeadstockSansThin.eot');
+    src: url('../fonts/Headstock/HeadstockSansThin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Headstock/HeadstockSansThin.woff2') format('woff2'),
+        url('../fonts/Headstock/HeadstockSansThin.woff') format('woff'),
+        url('../fonts/Headstock/HeadstockSansThin.ttf') format('truetype'),
+        url('../fonts/Headstock/HeadstockSansThin.svg#HeadstockSansThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}

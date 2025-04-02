@@ -18,9 +18,11 @@ import SignUp from "../page/auth/SignUp";
 import BlogGridPage from "../page/blog/BlogGridPage.jsx";
 import BlogPage from "../page/blog/BlogPage.jsx";
 import SingleBlogPage from "../page/blog/SingleBlog.jsx";
+
+import Home from "../page/home/Home.jsx";
 import HomeFive from "../page/home/HomeFive.jsx";
 import HomeFour from "../page/home/HomeFour.jsx";
-import HomeOne from "../page/home/HomeOne.jsx";
+// import HomeOne from "../page/home/HomeOne.jsx";
 import HomeSeven from "../page/home/HomeSeven.jsx";
 import HomeSix from "../page/home/HomeSix.jsx";
 import HomeThree from "../page/home/HomeThree.jsx";
@@ -47,7 +49,7 @@ export const router = createBrowserRouter([
 				children: [
 					{
 						path: "/",
-						element: <HomeOne />,
+						element: <Home />,
 					},
 					{
 						path: "/about-us",
