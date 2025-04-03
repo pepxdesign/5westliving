@@ -21,7 +21,7 @@ function MessageForm() {
 						type="text"
 						name="name"
 						id="name"
-						placeholder="Your Name"
+						placeholder="Full Name*"
 					/>
 				</Field>
 			</div>
@@ -32,21 +32,36 @@ function MessageForm() {
 						type="email"
 						name="email"
 						id="email"
-						placeholder="Your email address"
+						placeholder="Email*"
 					/>
 				</Field>
 			</div>
 			<div className="aximo-form-field">
-				<input type="text" placeholder="+088-234-6849" />
+				<Field error={errors.phone}>
+					<input
+						{...register("phone", { required: "Phone is required." })}
+						type="text"
+						name="phone"
+						id="phone"
+						placeholder="Phone Number*"
+					/>
+				</Field>
 			</div>
+
 			<div className="aximo-form-field">
-				<textarea name="textarea" placeholder="Write your message here..."></textarea>
+				<Field error={errors.date}>
+					<input
+						{...register("date", { required: "Date is required." })}
+						type="text"
+						name="date"
+						id="date"
+						placeholder="Preferred Date*"
+					/>
+				</Field>
 			</div>
+			
 			<button id="aximo-submit-btn" type="submit">
-				Send message{" "}
-				<span>
-					<img src={ArrowRight3Img} alt="ArrowRight3Img" />
-				</span>
+				Send message
 			</button>
 		</form>
 	);

@@ -15,13 +15,22 @@
 
 **/
 :root {
+
+	--body-color: #1A1F26;
+	--background-color: #EEEDE8;
+	--dark-stone: #DAD9D1;
+	--body-color: #1A1F26;
+	--ligh-navy: #394453; 
+	--subheader-color: #88857F;
+	--light-color-40: rgba(238,237,232,.4);
+
+
 	--heading-color: #000;
 	--heading-color2: #1b1b1b;
 	--heading-color3: #191931;
 	--heading-color4: #221f1a;
 	--heading-color5: #2c2c2c;
 	--heading-color6: #0b1040;
-	--body-color: #0c0c0c;
 	--accent-color: #bff747;
 	--white-smoke: #fdfde1;
 	--white-color: #ffffff;
@@ -76,7 +85,7 @@
 	--fs-xl-lineheight: 32px;
 	--fs-lg-18: 18px;
 	--fs-lg-lineheight: 28px;
-	--fs-md-16: 16px;
+	--fs-md-16: 1rem;
 	--fs-md-lineheight: 24px;
 	--fs-xs-14: 14px;
 	--fs-xs-lineheight: 22px;
@@ -105,11 +114,11 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	vertical-align: baseline;
 	text-rendering: optimizeLegibility;
-	font-weight: 400;
+	font-weight: 100;
 	overflow-x: hidden;
-	background-color: var(--light-bg1);
+	background-color: var(--background-color);
 	counter-reset: my-sec-counter;
-	font-size: 18px;
+	font-size: 1rem;
 	line-height: 30px;
 }
 

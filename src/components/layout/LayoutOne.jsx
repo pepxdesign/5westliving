@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../home-one/footer";
-import Header from "../home-one/header";
+import Footer from "../home/footer";
+import Header from "../home/header";
 function LayoutOne() {
 	return (
 		<>

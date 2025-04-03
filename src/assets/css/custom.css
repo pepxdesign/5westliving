@@ -1,0 +1,467 @@
+body{
+	font-size: 1rem;
+	line-height: 1.6;
+    letter-spacing: 0.02rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "HeadstockSans";
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+
+.bg-light,
+.bg-light4 {
+    background-color: var(--background-color) !important;
+}
+
+.bg-dark-stone{
+    background-color: var(--dark-stone) !important;
+}
+
+.bg-navy{
+    background-color: var(--body-color) !important;
+}
+
+.extra-side-margin{
+    margin: 0 2.5rem;
+}
+.aximo-content-section{
+    padding: 12.5rem 0 12.5rem 0;
+
+}
+
+.brand-logo img {
+    max-height: 2rem;
+}
+
+.aximo-subtitle{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--subheader-color);
+}
+
+.aximo-default-btn{
+    font-size: 0.75rem;
+    width: unset;
+    text-transform: uppercase;
+}
+
+.aximo-pricing-btn:hover{
+    background-color: var(--body-color) !important;
+    border: 2px solid var(--body-color) !important;
+}
+
+.aximo-go-top{
+    color: var(--background-color);
+}
+
+.aximo-go-top:before{
+    background-color: var(--body-color);
+}
+
+/*  HEADER  */
+.site-menu-main .nav-link-item{
+	font-size: 0.75rem;
+	color: var(--background-color);
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+.aximo-default-btn{
+	border-radius: 40rem;
+    font-family: "TyrosPro", Arial, sans-serif;
+    /* ADD BOLDER FONT FOR BUTTON */
+
+}
+
+.aximo-default-btn.aximo-header-btn.blue-btn2{
+    font-size: 0.75rem;
+	color: var(--body-color) !important;
+	background-color: var(--background-color);
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+header.aximo-header-section.aximo-header7.sticky-menu{
+    background-color: var(--background-color) !important;
+    /* -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); */
+}
+
+header.aximo-header-section.aximo-header7.sticky-menu .site-menu-main .nav-link-item{
+	color: var(--body-color);
+}
+
+header.aximo-header-section.aximo-header7.sticky-menu .aximo-default-btn.aximo-header-btn.blue-btn2{
+    color: var(--background-color) !important;
+    background-color:  var(--body-color);
+}
+
+
+
+
+/* END HEADER */
+
+/* HERO SECTION */
+
+.aximo-hero-section4{
+	padding: 8rem 0 0 0 !important;
+	margin: 0 !important;
+	border-radius: 0;
+	height: 100vh;
+    width: 100vw;
+}
+
+.aximo-hero-section4 .container{
+	height: 100%;
+}
+
+.aximo-hero-section4 .container .row{
+	height: 100%;
+    justify-content: center;
+}
+
+.aximo-hero-content4 {
+	text-align: center;
+}
+
+.aximo-hero-content4 h1 { 
+	font-family: "HeadstockSans" !important;
+    font-weight: 100 !important;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+}
+
+.aximo-hero-content4 p {
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+    padding-right: 0;
+}
+
+/* END HERO SECTION */
+
+/* INTRO SECTION */
+.aximo-video-section2 img{
+    aspect-ratio: 2 / 1;
+}
+
+.aximo-hero-section5 .aximo-hero-content5 h2{
+    font-family: "HeadstockSans" !important;
+    font-weight: 100 !important;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    color: var(--background-color);
+    margin-bottom: 24px;
+}
+
+.aximo-hero-section5 .aximo-hero-content5 p{
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    padding-right: 0;
+}
+
+
+    
+/* END INTRO SECTION */
+
+
+/* Design Section */
+.aximo-default-content.libre-font h2{
+    font-family: "HeadstockSans" !important;
+    font-weight: 100 !important;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+}
+
+.aximo-default-content p{
+    font-size: 1rem;
+	letter-spacing: 0.05rem;
+    padding-right: 0;
+    max-width: 80%;
+}
+
+.design-content-padding{
+    padding: 3rem 0 3rem 2.5rem;
+}
+.floorplan-content-padding,
+.location-content-padding,
+.team-content-padding{
+    padding: 0 0 5rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.aximo-content-thumb3 img{  
+    aspect-ratio: 1 / 1;
+}
+
+.aximo-content-thumb3{
+    margin-right: 0;
+    border-radius: 0.875rem;
+}
+
+.row.full-width-image{
+    margin: 2.5rem 0 0 0;
+}
+
+.row.full-width-image div{
+    margin: 0;
+    padding: 0;
+}
+
+.row.full-width-image img{
+    aspect-ratio: 2 / 1;
+}
+
+.full-width-image{
+    margin: 0;
+    padding: 0;
+}
+
+.full-width-image img{
+    aspect-ratio: 2 / 1;
+}
+/* End Design Section */
+
+
+/* Floorplans Section */
+
+.mt-25{
+    margin-top: 2.5rem;
+}
+
+.floorplan-section .aximo-default-content span,
+.floorplan-section .aximo-default-content h2,
+.floorplan-section .aximo-default-content p{
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.floorplan-section .aximo-default-content span{
+    margin-bottom: 20px;
+}
+
+.floorplan-section .aximo-default-content h2{
+    margin-bottom: 24px;
+}
+
+.floorplan-section .aximo-default-content p.align-left{
+    text-align: left !important;
+    margin-left: 0;
+    max-width: 80%;
+}
+/* End Floorplans Section */
+
+
+/* LOCATION SECTION */
+
+.location-section .aximo-default-content span,
+.location-section .aximo-default-content h2,
+.location-section .aximo-default-content p{
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.location-section .aximo-default-content span{
+    margin-bottom: 20px;
+}
+
+.location-section .aximo-default-content h2{
+    margin-bottom: 24px;
+}
+
+.aximo-iconbox-wrap7{
+    margin-bottom: 0px;
+}
+
+.aximo-iconbox-wrap7 .aximo-iconbox-icon7{
+    margin-bottom: 0px;
+}
+
+.aximo-iconbox-wrap7 .aximo-iconbox-icon7 img{
+    border-radius: .875rem;
+    aspect-ratio: 3 / 4;
+}
+
+/* ENDS LOCATION SECTION */
+
+
+/* TEAM SECTION */
+
+.team-section .aximo-default-content span,
+.team-section .aximo-default-content h2,
+.team-section .aximo-default-content p{
+    max-width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.team-section .aximo-default-content span{
+    margin-bottom: 20px;
+}
+
+.team-section .aximo-default-content h2{
+    margin-bottom: 24px;
+}
+
+.aximo-brandlogo-section2{
+    background-color: var(--background-color);
+    margin: 0 !important;
+}
+
+/* ENDS TEAM SECTION */
+
+
+/* FOOTER */
+
+
+.aximo-form-field input{
+    border: unset !important;
+    border-radius: unset;
+    border-bottom: 1px solid var(--background-color) !important;
+}
+
+.cta-section h2{
+    font-size: 4rem;
+}
+
+/* .aximo-footer-bottom{
+    border-top: 1px solid var(--light-color-40);
+} */
+
+.aximo-footer-bottom{
+    border-top: unset;
+}
+
+.disclaimer p{
+    color: var(--background-color);
+    font-size: 0.625rem;
+    text-align: left;
+}
+.disclaimer{
+    padding-bottom: 2rem;
+}
+.aximo-copywright.one p{
+    color: var(--background-color);
+    font-size: 0.625rem;
+    text-align: left;
+}
+
+.aximo-copywright.two p{
+    color: var(--background-color);
+    font-size: 0.625rem;
+    text-align: right;
+}
+
+#aximo-submit-btn{
+    margin-top: 3rem;
+	border: unset;
+    width: unset;
+    border: unset;
+    font-family: "TyrosPro", Arial, sans-serif;
+    border-radius: 40rem;
+    box-shadow: unset;
+    background-color: var(--background-color);
+    justify-content: unset;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0px 40px;
+
+}
+
+.aximo-footer-menu,
+.aximo-footer-title p,
+.aximo-footer-menu ul li a,
+.aximo-footer-menu ul li p{
+    font-size: 0.875rem;
+    color: var(--background-color);
+}
+
+.aximo-footer-title p{
+    text-transform: uppercase;
+}
+
+.aximo-footer-menu ul li{
+    margin: .3rem 0;
+}
+
+.aximo-copywright{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.625rem;
+    color: var(--background-color);
+    gap: 1rem;
+}
+
+.aximo-copywright a{
+    color: var(--background-color);
+    text-transform: uppercase;
+}
+
+.aximo-form-field input:focus, .aximo-form-field input:focus, 
+.aximo-form-field textarea:focus, .aximo-form-field textarea:focus {
+    border: unset !important;
+    border-bottom: 1px solid var(--background-color) !important;
+}
+
+
+
+.aximo-footer-top.aximo-section-padding{
+    background: var(--ligh-navy) !important;
+    border-radius: .875rem;
+    padding: 5rem 2.5rem;
+}
+
+.aximo-footer-textarea.light-one img{
+    max-width: 9rem;
+}
+
+.aximo-footer-section{
+    padding-top: 2.5rem;
+}
+
+
+/* END FOOTER */
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+    .site-navbar .header-btn {
+        margin-right: 4rem;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .site-navbar .header-btn {
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .container{
+        max-width: 100%;
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 100%;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "hero": {
+      "title": "Luxury Living at 5WEST",
+      "text": "Character Homes Located in the Heart of Kerrisdale",
+      "image": "../../../assets/images/all/hero-bg.jpg"
+    },
+
+    "intro": {
+      "title": "Combining Style, Comfort, and Nature",
+      "text": "This exclusive Kerrisdale development blends timeless elegance with modern sustainability, offering refined living with energy-efficient design and natural finishes.",
+      "image": "../../../assets/images/all/hero-bg.jpg"
+    },
+
+    "design": {
+      "subtitle": "Design and Life Experience",
+      "title": "A Home Like No Other",
+      "text": "Step inside and experience luxury like never before. Every detail, from the sleek interiors to the carefully curated materials, has been chosen to create a home that is both beautiful and functional.",
+      "btnlabel": "Discover the design",     
+      "image": "../../../assets/images/all/hero-bg.jpg"
+    },
+
+    "floorplans": {
+      "subtitle": "Floorplans",
+      "title": "Your Perfect Home is Waiting",
+      "text": "Browse our selection of thoughtfully designed residences, each offering a unique layout tailored to your lifestyle.",
+      "text2": "Discover thoughtfully designed 1, 2 & 3-bedroom floorplans, each crafted for maximum space, comfort, and style. From open-concept layouts to private balconies with stunning views, every detail is designed to enhance your lifestyle.",
+      "btnlabel": "Explore Floorplans",     
+      "image": "../../../assets/images/all/hero-bg.jpg"
+    },
+
+    "location": {
+      "subtitle": "Location and Lifestyle",
+      "title": "The Amenities Speak For Themselves",
+      "text": "Located in the heart of Kerrisdale, this community offers the perfect balance of serenity and city convenience. Stroll through charming boutique shops, cozy cafés, golf courses and lush parks, all just minutes away.",
+      "btnlabel": "Explore The Location",     
+      "image": "../../../assets/images/all/hero-bg.jpg"
+    },
+
+    "team": {
+      "subtitle": "Our Team",
+      "title": "Built on Excellence, Backed by Trust"
+    }
+
+}

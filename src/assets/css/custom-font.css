@@ -21,8 +21,8 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'HeadstockSans';
+/* @font-face {
+    font-family: 'HeadstockSansItalic';
     src: url('../fonts/Headstock/HeadstockSansThinItalic.eot');
     src: url('../fonts/Headstock/HeadstockSansThinItalic.eot?#iefix') format('embedded-opentype'),
         url('../fonts/Headstock/HeadstockSansThinItalic.woff2') format('woff2'),
@@ -32,16 +32,16 @@
     font-weight: 100;
     font-style: italic;
     font-display: swap;
-}
+} */
 
 @font-face {
     font-family: 'HeadstockSans';
-    src: url('../fonts/Headstock/HeadstockSansThin.eot');
-    src: url('../fonts/Headstock/HeadstockSansThin.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Headstock/HeadstockSansThin.woff2') format('woff2'),
-        url('../fonts/Headstock/HeadstockSansThin.woff') format('woff'),
-        url('../fonts/Headstock/HeadstockSansThin.ttf') format('truetype'),
-        url('../fonts/Headstock/HeadstockSansThin.svg#HeadstockSansThin') format('svg');
+    src: url('../fonts/Headstock/subset-HeadstockSansThin.eot');
+    src: local('HeadstockSans Thin'), local('HeadstockSansThin'),
+        url('../fonts/Headstock/subset-HeadstockSansThin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Headstock/subset-HeadstockSansThin.woff2') format('woff2'),
+        url('../fonts/Headstock/subset-HeadstockSansThin.woff') format('woff'),
+        url('../fonts/Headstock/subset-HeadstockSansThin.svg#HeadstockSansThin') format('svg');
     font-weight: 100;
     font-style: normal;
     font-display: swap;

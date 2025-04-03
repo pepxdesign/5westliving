@@ -1,24 +1,23 @@
-import FadeInRight from "../../animation/FadeInRight";
+import HeroBg from "../../../assets/images/all/hero-bg.jpg";
 import HeroContent from "./HeroContent";
-import HeroThumbs from "./HeroThumbs";
+// import HeroVideo from "./HeroVideo";
 
-function HeroSection() {
+function Hero() {
+
 	return (
-		<div className="aximo-hero-section dark-bg">
-			<div className="container position-relative">
+		<div className="aximo-hero-section4" style={{ backgroundImage: `url(${HeroBg})` }}>
+			<div className="container">
 				<div className="row">
-					<div className="col-lg-8">
+					<div className="col-lg-10">
 						<HeroContent />
 					</div>
-					<div className="col-lg-4">
-						<FadeInRight>
-							<HeroThumbs />
-						</FadeInRight>
-					</div>
+					{/* <div className="col-lg-4 d-flex align-items-end justify-content-center">
+						<HeroVideo />
+					</div> */}
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default HeroSection;
+export default Hero;
