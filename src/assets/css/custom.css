@@ -19,6 +19,51 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: var(--body-color);
 }
 
+.mobile-navbar{
+    background-color: var(--background-color);
+}
+
+.mobile-menu-head--title img{
+	max-width: unset;
+	height: 3rem;
+	margin: 1.25rem 0 1.25rem 1.25rem;
+}
+
+.mobile-menu-head--close,
+.mobile-menu-head{
+    border: unset;
+}
+.mobile-menu-head{
+    height: fit-content;
+}
+.mobile-navbar ul{
+    padding-top: 1rem;
+}
+
+.mobile-menu-head--title{
+    margin: 0;
+}
+
+.mobile-navbar ul li a, 
+.mobile-navbar ul li button{
+    color: var(--body-color);
+    font-size: 1;
+    font-family: "TyrosPro", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    height: fit-content;
+    width: 100%;
+    padding: 1rem 0 1rem 1.25rem;
+    border: unset;
+}
+
+/* .mobile-navbar ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+} */
 
 .mobile-nav-wrap .mobile-menu-trigger span:before,
 .mobile-nav-wrap .mobile-menu-trigger span:after,

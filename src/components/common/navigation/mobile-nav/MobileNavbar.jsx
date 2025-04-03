@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import NavItem from "./NavItem";
+import LogoDark from "../../../../assets/images/logo/logo-dark.png";
 
 const MobileNavbar = ({ menuItemsData, title }) => {
 	const depthLevel = 0;
@@ -46,7 +47,7 @@ const MobileNavbar = ({ menuItemsData, title }) => {
 			{showMenu && (
 				<motion.nav className="mobile-navbar" variants={animationVariants} initial="initial" animate="animate">
 					<div className="mobile-menu-head">
-						<div className="mobile-menu-head--title">{title}</div>
+						<div className="mobile-menu-head--title"><img src={LogoDark} alt="5West Logo" /></div>
 						<div className="mobile-menu-head--close" onClick={() => setShowMenu(false)}>
 							&times;
 						</div>
