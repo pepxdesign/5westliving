@@ -3667,7 +3667,7 @@ h1.post__title {
 	font-size: 118px;
 	margin-bottom: 24px;
 	letter-spacing: normal;
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 	color: var(--heading-color);
 }
 @media (max-width: 1400px) {
@@ -4567,7 +4567,7 @@ span.aximo-hero-shape-title2 {
 	font-size: 80px;
 	margin-bottom: 5px;
 	color: var(--heading-color2);
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 }
 @media (max-width: 1199px) {
 	.aximo-counter-data2 h2 {
@@ -5042,7 +5042,7 @@ p.aximo-skillbar-lable {
 }
 .aximo-iconbox-data2 h3 {
 	margin-bottom: 15px;
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 	color: var(--heading-color2);
 }
 .aximo-iconbox-column {
@@ -5411,7 +5411,7 @@ a.aximo-service-icon:hover {
 	}
 }
 .aximo-accordion-wrap2 h3.accordion-header {
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 	color: var(--header-color2);
 }
 @media (max-width: 767px) {
@@ -6213,7 +6213,7 @@ img.aximo-video-circle {
 	font-size: 80px;
 	margin-bottom: 40px;
 	color: var(--light-color1);
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 }
 @media (max-width: 1199px) {
 	.aximo-cta-wrap h2 {
@@ -6825,7 +6825,7 @@ img.aximo-video-circle {
 	margin-bottom: 15px;
 }
 .aximo-pricing-header h3 {
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 	color: var(--heading-color2);
 }
 .aximo-pricing-price {
@@ -6834,7 +6834,7 @@ img.aximo-video-circle {
 	border-bottom: 1px solid var(--heading-color2);
 }
 .aximo-pricing-price h2 {
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 	color: var(--heading-color2);
 }
 .aximo-pricing-body {
@@ -7816,7 +7816,7 @@ img.aximo-video-circle {
 }
 .aximo-service-increase-title h3 {
 	transition: all 0.4s;
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 	color: var(--heading-color2);
 }
 .aximo-service-increase-body {
@@ -7854,7 +7854,7 @@ img.swipeimage {
 	object-fit: cover;
 	z-index: 9;
 	opacity: 0;
-	visibily: hidden;
+	visibility: hidden;
 	pointer-events: none;
 	border-radius: 7px;
 	border: 5px solid #fff;
@@ -8069,6 +8069,7 @@ a.forgot-password {
 .aximo-account-checkbox label:before {
 	content: "";
 	-webkit-appearance: none;
+	appearance: none;
 	background-color: transparent;
 	border: 1.5px solid #7f8995;
 	padding: 7px;
@@ -8407,7 +8408,7 @@ a.aximo-connect-login img {
 	font-size: 80px;
 	font-weight: 600;
 	color: var(--heading-color2);
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 }
 @media (max-width: 1199px) {
 	.aximo-section-title.clash-grotesk h2 {
@@ -8616,7 +8617,7 @@ a.aximo-connect-login img {
 	font-size: 80px;
 	font-weight: 600;
 	color: var(--heading-color2);
-	font-family: "HeadstockSans", Arial, sans-serif;
+	font-family: "HeadstockSansThin", Arial, sans-serif;
 	letter-spacing: normal;
 }
 @media (max-width: 1399px) {
@@ -10140,7 +10141,8 @@ a.comment-reply {
 	width: 13px;
 	height: 13px;
 	border-radius: 50%;
-	background: var(--accent-color);
+	/* background: var(--accent-color); */
+	background: var(--background-color) !important;
 	animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 

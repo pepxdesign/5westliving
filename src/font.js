@@ -12,14 +12,8 @@ import "./assets/fonts/TyrosPro/TyrosPro-Regular.ttf";
 import "./assets/fonts/TyrosPro/TyrosPro-Regular.woff";
 import "./assets/fonts/TyrosPro/TyrosPro-Regular.woff2";
 
-import "./assets/fonts/Headstock/HeadstockSansThinItalic.eot";
-import "./assets/fonts/Headstock/HeadstockSansThinItalic.svg";
-import "./assets/fonts/Headstock/HeadstockSansThinItalic.ttf";
-import "./assets/fonts/Headstock/HeadstockSansThinItalic.woff";
-import "./assets/fonts/Headstock/HeadstockSansThinItalic.woff2";
-
-import "./assets/fonts/Headstock/HeadstockSansThin.eot";
-import "./assets/fonts/Headstock/HeadstockSansThin.svg";
-import "./assets/fonts/Headstock/HeadstockSansThin.ttf";
-import "./assets/fonts/Headstock/HeadstockSansThin.woff";
-import "./assets/fonts/Headstock/HeadstockSansThin.woff2";
+import "./assets/fonts/HeadstockSans/HeadstockSansThin.eot";
+import "./assets/fonts/HeadstockSans/HeadstockSansThin.svg";
+import "./assets/fonts/HeadstockSans/HeadstockSansThin.ttf";
+import "./assets/fonts/HeadstockSans/HeadstockSansThin.woff";
+import "./assets/fonts/HeadstockSans/HeadstockSansThin.woff2";

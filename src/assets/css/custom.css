@@ -5,7 +5,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "HeadstockSans";
+    font-family: "HeadstockSansThin", Arial, sans-serif !important;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 0.125rem;
@@ -15,6 +15,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     padding-bottom: 0 !important;
 }
 
+.aximo-preloader-wrap{
+    background-color: var(--body-color);
+}
+
+
+.mobile-nav-wrap .mobile-menu-trigger span:before,
+.mobile-nav-wrap .mobile-menu-trigger span:after,
+.mobile-nav-wrap .mobile-menu-trigger span{
+    background-color: var(--background-color);
+}
 
 .bg-light,
 .bg-light4 {
@@ -104,6 +114,12 @@ header.aximo-header-section.aximo-header7.sticky-menu .aximo-default-btn.aximo-h
     background-color:  var(--body-color);
 }
 
+header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-menu-trigger span:before,
+header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-menu-trigger span:after,
+header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-menu-trigger span{
+    background-color: var(--body-color);
+}
+
 
 
 
@@ -133,7 +149,7 @@ header.aximo-header-section.aximo-header7.sticky-menu .aximo-default-btn.aximo-h
 }
 
 .aximo-hero-content4 h1 { 
-	font-family: "HeadstockSans" !important;
+	font-family: "HeadstockSansThin", Arial, sans-serif !important;
     font-weight: 100 !important;
     letter-spacing: 0.125rem;
     text-transform: uppercase;
@@ -153,7 +169,7 @@ header.aximo-header-section.aximo-header7.sticky-menu .aximo-default-btn.aximo-h
 }
 
 .aximo-hero-section5 .aximo-hero-content5 h2{
-    font-family: "HeadstockSans" !important;
+    font-family: "HeadstockSansThin", Arial, sans-serif !important;
     font-weight: 100 !important;
     letter-spacing: 0.125rem;
     text-transform: uppercase;
@@ -175,7 +191,7 @@ header.aximo-header-section.aximo-header7.sticky-menu .aximo-default-btn.aximo-h
 
 /* Design Section */
 .aximo-default-content.libre-font h2{
-    font-family: "HeadstockSans" !important;
+    font-family: "HeadstockSansThin", Arial, sans-serif !important;
     font-weight: 100 !important;
     letter-spacing: 0.125rem;
     text-transform: uppercase;
@@ -291,7 +307,6 @@ header.aximo-header-section.aximo-header7.sticky-menu .aximo-default-btn.aximo-h
 
 .aximo-iconbox-wrap7 .aximo-iconbox-icon7 img{
     border-radius: .875rem;
-    aspect-ratio: 3 / 4;
 }
 
 /* ENDS LOCATION SECTION */
@@ -318,6 +333,14 @@ header.aximo-header-section.aximo-header7.sticky-menu .aximo-default-btn.aximo-h
 .aximo-brandlogo-section2{
     background-color: var(--background-color);
     margin: 0 !important;
+}
+
+.aximo-team-thumb{
+	border: 1px solid transparent;
+    border-radius: .875rem !important;
+    background-color: var(--dark-stone);
+    display: flex;
+    justify-content: center;
 }
 
 /* ENDS TEAM SECTION */
@@ -444,19 +467,141 @@ header.aximo-header-section.aximo-header7.sticky-menu .aximo-default-btn.aximo-h
 }
 
 
-
-@media (max-width: 991px) {
-    .site-navbar .header-btn {
-        margin-right: 4rem;
-    }
-}
-
 @media (max-width: 575px) {
+
+    h2, p {
+        text-align: left;
+    }
+
+    
+
+    p,
+    .aximo-default-content.light p,
+    .aximo-hero-section5 .aximo-hero-content5 p,
+    .aximo-default-content p,
+    input[type="text"], input[type="email"], input[type="password"], 
+    input[type="url"], input[type="tel"], input[type="time"], input[type="date"], 
+    input[type="search"], input, textarea, .text-danger  {
+        letter-spacing: 0;
+        line-height: 1.7;
+        font-size: .888rem;
+    }
+
+    .aximo-subtitle {
+        font-size: .666rem;
+        text-align: left;
+    }
+
+    .aximo-btn-wrap{
+        text-align: left;
+    }
+    .aximo-default-btn{
+        padding: 0px 28px;
+        padding: 0px 28px;
+        height: 2.6rem;
+        line-height: 2.5rem;
+        vertical-align: middle;
+    }
+
     .container{
         max-width: 100%;
         padding-right: 1.25rem;
         padding-left: 1.25rem;
     }
+    .extra-side-margin {
+        margin: 0 1.25rem;
+    }
+
+    .design-content-padding{
+        padding: 0rem 0 3rem 0;
+    }
+
+    .aximo-footer-top .aximo-default-content h2,
+    .aximo-hero-section5 .aximo-hero-content5 h2,
+    .aximo-default-content.libre-font h2{
+        font-size: 2.2rem;
+    }
+
+    .aximo-hero-section5,
+    .aximo-content-section{
+        padding: 6rem 0 6rem 0;
+    }
+
+    .aximo-content-thumb3 {
+        margin-bottom: 1.25rem;
+    }
+    .row.full-width-image{
+        margin-top: 0;
+    }
+
+
+    .floorplan-section .aximo-default-content span, 
+    .floorplan-section .aximo-default-content h2, 
+    .floorplan-section .aximo-default-content p,
+    .location-section .aximo-default-content span, 
+    .location-section .aximo-default-content h2, 
+    .location-section .aximo-default-content p,
+    .team-section .aximo-default-content span, 
+    .team-section .aximo-default-content h2, 
+    .team-section .aximo-default-content p,
+    .aximo-default-content p {
+        text-align: left;
+        max-width: unset;
+    }
+    .team-section .aximo-default-content h2{
+        max-width: 80%;
+        margin-left: 0;
+    }
+
+    .floorplan-content-padding, 
+    .location-content-padding, 
+    .team-content-padding{
+        padding-bottom: 3rem;
+    }
+
+    .floorplan2-content-padding{
+        padding-top: 3rem;
+    }
+
+    .row.mt-25{
+        margin-top: 0;
+    }
+
+    .floorplan-section .aximo-default-content p{
+        max-width: unset !important;
+    }
+    .aximo-iconbox-wrap7{
+        margin-bottom: 1.25rem;
+    }
+
+    #aximo-submit-btn{
+        padding: 0px 28px;
+        height: 2.6rem;
+        line-height: 2.5rem;
+        vertical-align: middle;
+        font-size: 0.75rem;
+    }
+    .aximo-footer-menu {
+        margin-bottom: 3rem !important;
+    }
+
+    .aximo-footer-bottom{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 1.25rem;
+    }
+
+    .aximo-hero-content4 p{
+        text-align: center;
+        font-size: 1.1rem;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .aximo-footer-menu ul li {
+        margin: 0;
+    }
+
 }
 @media (min-width: 576px){
     .container{

@@ -21,27 +21,14 @@
     font-display: swap;
 }
 
-/* @font-face {
-    font-family: 'HeadstockSansItalic';
-    src: url('../fonts/Headstock/HeadstockSansThinItalic.eot');
-    src: url('../fonts/Headstock/HeadstockSansThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Headstock/HeadstockSansThinItalic.woff2') format('woff2'),
-        url('../fonts/Headstock/HeadstockSansThinItalic.woff') format('woff'),
-        url('../fonts/Headstock/HeadstockSansThinItalic.ttf') format('truetype'),
-        url('../fonts/Headstock/HeadstockSansThinItalic.svg#HeadstockSansThinItalic') format('svg');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-} */
-
 @font-face {
-    font-family: 'HeadstockSans';
-    src: url('../fonts/Headstock/HeadstockSansThin.eot');
-    src: local('HeadstockSans Thin'), local('HeadstockSansThin'),
-        url('../fonts/Headstock/HeadstockSansThin.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Headstock/HeadstockSansThin.woff2') format('woff2'),
-        url('../fonts/Headstock/HeadstockSansThin.woff') format('woff'),
-        url('../fonts/Headstock/HeadstockSansThin.svg#HeadstockSansThin') format('svg');
+    font-family: 'HeadstockSansThin';
+    src: url('../fonts/HeadstockSans/HeadstockSansThin.eot');
+    src: url('../fonts/HeadstockSans/HeadstockSansThin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HeadstockSans/HeadstockSansThin.woff2') format('woff2'),
+        url('../fonts/HeadstockSans/HeadstockSansThin.woff') format('woff'),
+        url('../fonts/HeadstockSans/HeadstockSansThin.ttf') format('truetype'),
+        url('../fonts/HeadstockSans/HeadstockSansThin.svg#HeadstockSansThin') format('svg');
     font-weight: 100;
     font-style: normal;
     font-display: swap;

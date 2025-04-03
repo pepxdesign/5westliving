@@ -24,25 +24,29 @@ import { Link } from "react-router-dom";
 import FadeInLeft from "../../animation/FadeInLeft";
 import FadeInUp from "../../animation/FadeInUp";
 import data from "../../../data/data.json";
-import PlaceholderImg from "../../../assets/images/all/hero-bg.jpg";
 import FeatureCard from "./FeatureCard";
 import FadeInStagger from "../../animation/FadeInStagger";
+
+
+import Location1Img from "../../../assets/images/all/location-1.jpg";
+import Location2Img from "../../../assets/images/all/location-2.jpg";
+import Location3Img from "../../../assets/images/all/location-3.jpg";
 
 const locationsData = [
 	{
 		id: crypto.randomUUID(),
-		title: 'Grocery Store',
-		img: PlaceholderImg
+		title: 'Restaurants',
+		img: Location1Img
 	},
 	{
 		id: crypto.randomUUID(),
 		title: 'Golf Courses',
-		img: PlaceholderImg,
+		img: Location2Img
 	},
 	{
 		id: crypto.randomUUID(),
 		title: 'Parks',
-		img: PlaceholderImg
+		img: Location3Img
 	},
 ];
 

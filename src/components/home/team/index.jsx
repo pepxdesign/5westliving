@@ -64,15 +64,15 @@ function Team() {
 						</div>
 					</div>
 				</div>
-				{/* <div className="row">
+				<div className="row">
 						{teamMembers.map((member, index) => (
 							<FadeInStagger key={member.id} index={index} className="col-xl-4 col-md-6">
 								<TeamCard member={member} />
 							</FadeInStagger>
 						))}
-				</div> */}
+				</div>
 			</div>
-			<BrandLogo />
+			{/* <BrandLogo /> */}
 		</div>
 	);
 }

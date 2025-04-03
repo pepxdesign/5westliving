@@ -54,7 +54,7 @@ function Floorplans() {
 						</FadeInLeft>
 					</div>
 					<div className="col-lg-7 d-flex align-items-center">
-						<div className="aximo-default-content libre-font design-content-padding">
+						<div className="aximo-default-content libre-font floorplan2-content-padding">
 							<p className="align-left">{floorplansData.text2}</p>
 							<FadeInUp className="aximo-btn-wrap">
 								<Link className={`aximo-default-btn aximo-pricing-btn`} to="#">
