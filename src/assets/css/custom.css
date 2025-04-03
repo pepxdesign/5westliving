@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border: unset;
 }
 
+.aximo-footer-menu.light-one ul li a:hover{
+	color: var(--subheader-color);
+}
+
 /* .mobile-navbar ul li{
     display: flex;
     flex-direction: row;
@@ -648,10 +652,71 @@ header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-m
     }
 
 }
+
 @media (min-width: 576px){
     .container{
         max-width: 100%;
         padding-right: 2.5rem;
         padding-left: 2.5rem;
+    }
+}
+
+/* Tablet Layout */
+@media (min-width: 576px) and (max-width: 991px ){
+    .aximo-content-thumb3 img{
+        width: 100%;
+    }
+
+    .aximo-hero-content5{
+        padding: 0 6rem 0 6rem;
+    }
+        
+    .aximo-hero-content5 p{
+        margin: 0;
+        padding: 0;
+    }
+    .aximo-default-content p{
+        margin: auto;
+    }
+
+    .floorplan-section .aximo-default-content span, 
+    .floorplan-section .aximo-default-content h2, 
+    .floorplan-section .aximo-default-content p,
+    .location-section .aximo-default-content span, 
+    .location-section .aximo-default-content h2, 
+    .location-section .aximo-default-content p,
+    .team-section .aximo-default-content span, 
+    .team-section .aximo-default-content h2, 
+    .team-section .aximo-default-content p{
+        max-width: unset;
+    }
+
+    .floorplan-section .aximo-default-content p.align-left{
+        max-width: unset;
+        text-align: center !important;
+    }
+
+    .aximo-footer-top .aximo-default-content{
+        margin: 0;
+        text-align: left;
+    }
+
+    .aximo-footer-top .aximo-default-content h2,
+    .aximo-footer-top .aximo-default-content p{
+        margin-left: 0;
+    }
+
+    .aximo-footer-top .aximo-default-content h2{
+        max-width: unset;
+        margin-bottom: 24px;
+    }
+
+    .aximo-footer-bottom{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .aximo-footer-bottom .container{
+        padding: 0 0.7rem 0 0.7rem;
     }
 }

@@ -66,7 +66,7 @@ function Team() {
 				</div>
 				<div className="row">
 						{teamMembers.map((member, index) => (
-							<FadeInStagger key={member.id} index={index} className="col-xl-4 col-md-6">
+							<FadeInStagger key={member.id} index={index} className="col-xl-4 col-md-4">
 								<TeamCard member={member} />
 							</FadeInStagger>
 						))}

@@ -66,7 +66,7 @@ function Location() {
 				</div>
 				<div className="row">
 					{locationsData.map((location, index) => (
-						<FadeInStagger className="col-lg-4 col-md-6" index={index} key={location.id}>
+						<FadeInStagger className="col-lg-4 col-md-4" index={index} key={location.id}>
 							<FeatureCard location={location} />
 						</FadeInStagger>
 					))}

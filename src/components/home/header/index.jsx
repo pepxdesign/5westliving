@@ -22,10 +22,10 @@ function Header() {
 					<div className="menu-block-wrapper">
 						<DesktopNav>
 							{/* <NavItem url="about-us">Design</NavItem> */}
-							<NavItem url="design">Design</NavItem>
-							<NavItem url="design">Location</NavItem>
-							<NavItem url="floorplans">Floorplans</NavItem>
-							<NavItem url="teams">Teams</NavItem>
+							<NavItem url="#">Design</NavItem>
+							<NavItem url="#">Location</NavItem>
+							<NavItem url="#">Floorplans</NavItem>
+							<NavItem url="#">Teams</NavItem>
 						</DesktopNav>
 					</div>
 					<HeaderButton />
