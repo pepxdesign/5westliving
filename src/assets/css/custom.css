@@ -19,6 +19,9 @@ input[type=date], input[type=search], input, textarea {
 }
 
 .select-field{
+    letter-spacing: 0;
+    line-height: 1.7;
+    font-size: .888rem;
 	background: transparent;
     border-radius: 0 !important;
     border: unset !important;
@@ -251,7 +254,11 @@ header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-m
 }
 
 
-
+.design-content-padding p,
+.location-content-padding p,
+.floorplan-content-padding p{
+	color: var(--body-color);
+}
 
 /* END HEADER */
 
@@ -638,6 +645,18 @@ header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-m
         line-height: 1.7;
         font-size: .888rem;
         color: var(--background-color);
+    }
+
+
+    
+
+    .aximo-default-content.light p,
+    .aximo-default-content p{
+        color: var(--body-color);
+    }
+
+    .cta-section p{
+        color: var(--background-color) !important;
     }
 
     .text-danger  {
