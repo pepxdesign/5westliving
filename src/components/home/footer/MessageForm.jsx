@@ -17,20 +17,24 @@ function MessageForm() {
   const [error, setError] = useState(null); // Optional: show error message
 
   useEffect(() => {
-    if (submitted) {
-      const timer = setTimeout(() => setSubmitted(false), 5000);
-      return () => clearTimeout(timer);
-    }
+	if (submitted) {
+	  const timer = setTimeout(() => setSubmitted(false), 5000);
+	  return () => clearTimeout(timer);
+	}
   }, [submitted]);
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post(FORMSPREE_URL, data, {
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      });
+      const response = await axios.post(
+        FORMSPREE_URL,
+        data,
+        {
+			headers: {
+				"Content-Type": "application/json",
+				Accept: "application/json",
+			},
+        }
+      );
 
       if (response.status === 200) {
         reset(); // Clear the form
@@ -99,19 +103,19 @@ function MessageForm() {
       </form>
       {/* Success Message */}
       {submitted && (
-        <FadeInUp>
-          <p className="success-message">
-            Your message has been sent successfully!
-          </p>
-        </FadeInUp>
+		<FadeInUp >
+			<p className="mt-4 text-green-600 font-medium success-message">
+				Your message has been sent successfully!
+        	</p>
+		</FadeInUp>
       )}
 
       {/* Error Message */}
       {error && (
-        <FadeInUp>
-          <p className="error-message">{error}</p>
-        </FadeInUp>
-      )}
+		<FadeInUp >
+			<p className="mt-4 text-red-600 font-medium error-message">{error}</p>
+		</FadeInUp>
+	  )}
     </>
   );
 }
