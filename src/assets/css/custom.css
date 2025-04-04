@@ -125,6 +125,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background-color: var(--body-color);
 }
 
+.success-message{
+    background-color: #dff0d8;
+    padding: 1rem .8rem 1rem .8rem;
+    border-radius: 1rem;
+    margin-top: 1.4rem !important;
+    color: #3c763d;
+    border: 1px solid #3c763d;
+}
+
+.error-message{
+    background-color: #ffd0cc;
+    padding: 1rem .8rem 1rem .8rem;
+    border-radius: 1rem;
+    margin-top: 1.4rem !important;
+    color: #880807;
+    border: #880807;
+}
+
+
+
 /*  HEADER  */
 .site-menu-main .nav-link-item{
 	font-size: 0.75rem;
@@ -518,6 +538,10 @@ header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-m
 
 @media (max-width: 575px) {
 
+    /* header.aximo-header-section{
+        width: 100vw !important;
+    } */
+
     h2, p {
         text-align: left;
     }
@@ -719,4 +743,5 @@ header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-m
     .aximo-footer-bottom .container{
         padding: 0 0.7rem 0 0.7rem;
     }
+    
 }
