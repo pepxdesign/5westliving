@@ -500,7 +500,14 @@ header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-m
     text-align: right;
 }
 
+.aximo-default-content.light h2, 
+.aximo-default-content.light p{
+    color: var(--background-color);
+
+}
+
 #aximo-submit-btn{
+    color: var(--body-color);
     margin-top: 3rem;
 	border: unset;
     width: unset;
@@ -610,6 +617,13 @@ header.aximo-header-section.aximo-header7.sticky-menu .mobile-nav-wrap .mobile-m
     input[type="text"], input[type="email"], input[type="password"], 
     input[type="url"], input[type="tel"], input[type="time"], input[type="date"], 
     input[type="search"], input, textarea, .text-danger  {
+        letter-spacing: 0;
+        line-height: 1.7;
+        font-size: .888rem;
+        color: var(--background-color);
+    }
+
+    .text-danger  {
         letter-spacing: 0;
         line-height: 1.7;
         font-size: .888rem;

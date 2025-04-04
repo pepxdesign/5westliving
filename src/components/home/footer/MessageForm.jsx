@@ -29,7 +29,7 @@ function MessageForm() {
   const [error, setError] = useState(null); // Optional: show error message
 
   const handleDateChange = (date) => {
-    date && setSelectedDate(date);
+    setSelectedDate(date);
     setOpen(false); // close calendar
   };
 
@@ -54,7 +54,6 @@ function MessageForm() {
       return () => clearTimeout(timer);
     }
   }, [submitted]);
-
   
 
   const onSubmit = async (data) => {
@@ -70,6 +69,8 @@ function MessageForm() {
         reset(); // Clear the form
 		setSelectedDate(null);
 		setPhone(null);
+		setFName(null);
+		setLName(null);
         setSubmitted(true); // Show success message
         setError(null); // Clear any previous error
       } else {
@@ -97,23 +98,23 @@ function MessageForm() {
     <>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="aximo-form-field split-field">
-          <Field error={errors.fname} >
+          <Field error={errors.first_name} >
             <input
-              {...register("First Name", { required: "First Name is required." })}
+              {...register("first_name", { required: "First Name is required." })}
               type="text"
-              name="First Name"
-              id="fname"
+              name="first_name"
+              id="first_name"
 			  value={fname}
 			  onChange={handleFirstNameChange}
               placeholder="First Name*"
             />
           </Field>
-		  <Field error={errors.lname}>
+		  <Field error={errors.last_name}>
             <input
-              {...register("Last Name", { required: "Last Name is required." })}
+              {...register("last_name", { required: "Last Name is required." })}
               type="text"
-              name="Last Name"
-              id="lname"
+              name="last_name"
+              id="last_name"
 			  value={lname}
 			  onChange={handleLastNameChange}
               placeholder="Last Name*"
@@ -123,18 +124,18 @@ function MessageForm() {
         <div className="aximo-form-field split-field">
           <Field error={errors.email}>
             <input
-              {...register("Email", { required: "Email is required." })}
+              {...register("email", { required: "Email is required." })}
               type="email"
-              name="Email"
+              name="email"
               id="email"
               placeholder="Email*"
             />
           </Field>
 		  <Field error={errors.phone}>
             <input
-              {...register("Phone Number", { required: "Phone is required." })}
+              {...register("phone", { required: "Phone is required." })}
               type="text"
-              name="Phone Number"
+              name="phone"
               id="phone"
               placeholder="Phone Number*"
 			  value={phone}
@@ -142,17 +143,17 @@ function MessageForm() {
             />
           </Field>
         </div>
-		<div className="aximo-form-field">
-          <Field error={errors.date}>
+		<div className="aximo-form-field" ref={ref}>
+          <Field error={errors.preferredDate}>
             <input
-              {...register("Preferred Date", { required: "Date is required." })}
+              {...register("preferredDate", { required: "Date is required." })}
               type="text"
 			  readOnly
-              name="Preferred Date"
-              id="date"
+              name="preferredDate"
+              id="preferredDate"
               placeholder="Preferred Date*"
 			  onClick={() => setOpen((prev) => !prev)}
-			  value={selectedDate ? format(selectedDate, "yyyy-MM-dd") : ""}
+			  value={selectedDate ? format(selectedDate, "dd-MM-yyyy") : ""}
 			  className="date-field"
             />
           </Field>
