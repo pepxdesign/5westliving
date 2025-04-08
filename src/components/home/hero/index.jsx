@@ -1,19 +1,14 @@
-import HeroBg from "../../../assets/images/all/hero-bg.jpg";
 import HeroContent from "./HeroContent";
-// import HeroVideo from "./HeroVideo";
 
-function Hero() {
+function Hero({HeroImg, heroData}) {
 
 	return (
-		<div className="aximo-hero-section4" style={{ backgroundImage: `url(${HeroBg})` }}>
+		<div className="aximo-hero-section4" style={{ backgroundImage: `url(${HeroImg})` }}>
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-10">
-						<HeroContent />
+						<HeroContent heroData={heroData} />
 					</div>
-					{/* <div className="col-lg-4 d-flex align-items-end justify-content-center">
-						<HeroVideo />
-					</div> */}
 				</div>
 			</div>
 		</div>

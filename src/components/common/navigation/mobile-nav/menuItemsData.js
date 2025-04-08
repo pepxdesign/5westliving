@@ -1,22 +1,22 @@
 export const menuItemsData = [
 	{
 		title: "Design",
-		url: "#",
+		url: "/design",
 	},
 	{
 		title: "Floorplans",
-		url: "#",
+		url: "/floorplans",
 	},
 	{
 		title: "Location",
-		url: "#",
+		url: "/location",
 	},
 	{
 		title: "Team",
-		url: "#",
+		url: "/team",
 	},
 	{
-		title: "Contact",
-		url: "#",
+		title: "Register",
+		url: "#register-form",
 	}
 ];

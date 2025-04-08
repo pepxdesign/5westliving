@@ -1,5 +1,3 @@
-import Team1Img from "../../../assets/images/all/team-1.png";
-import Team2Img from "../../../assets/images/all/team-2.png";
 import Team3Img from "../../../assets/images/all/team-3.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -7,11 +5,7 @@ import { Autoplay } from "swiper/modules";
 const sliderData = [
 	{
 		id: crypto.randomUUID(),
-		img: Team1Img,
-	},
-	{
-		id: crypto.randomUUID(),
-		img: Team2Img,
+		img: Team3Img,
 	},
 	{
 		id: crypto.randomUUID(),
@@ -19,11 +13,15 @@ const sliderData = [
 	},
 	{
 		id: crypto.randomUUID(),
-		img: Team1Img,
+		img: Team3Img,
 	},
 	{
 		id: crypto.randomUUID(),
-		img: Team2Img,
+		img: Team3Img,
+	},
+	{
+		id: crypto.randomUUID(),
+		img: Team3Img,
 	},
 	{
 		id: crypto.randomUUID(),

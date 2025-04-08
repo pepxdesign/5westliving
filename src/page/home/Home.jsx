@@ -1,40 +1,29 @@
-
-// import BrandLogo from "../../components/home/brand-logo";
-// import Instagrams from "../../components/home/instagrams";
-// import MissionVision from "../../components/home/mission-vission";
-// import NumberBox from "../../components/home/number-box";
-// import Projects from "../../components/home/projects";
-// import Services from "../../components/home/services";
-// import Testimonials from "../../components/home/testimonials";
-
 import Hero from "../../components/home/hero";
-import Design from "../../components/home/design";
-import Floorplans from "../../components/home/floorplans";
-import Location from "../../components/home/location";
-import Team from "../../components/home/team";
+import DesignSection from "../../components/home/design-section";
+import FloorplansSection from "../../components/home/floorplans-section";
+import LocationSection from "../../components/home/location-section";
+import TeamSection from "../../components/home/team-section";
 import Intro from "../../components/home/intro";
 import IntroImage from "../../components/home/introimage";
+import HeroBg from "../../assets/images/all/hero-bg.jpg";
+
+
+const heroData = {
+	title: "Luxury Living at 5WEST",
+	text: "Character Homes Located in the Heart of Kerrisdale"
+}
+
 
 function Home() {
 	return (
 		<div className="aximo-all-section bg-light4">
-			<Hero />
+			<Hero HeroImg={HeroBg} heroData={heroData}/>
 			<Intro />
 			<IntroImage />
-			<Design />
-			<Floorplans />
-			<Location />
-			<Team />
-
-			{/* <MissionVision />
-			<BrandLogo />
-			<Services />
-			<WhyChooseUs />
-			<NumberBox />
-			<Projects />
-			<Testimonials />
-			
-			<Instagrams /> */}
+			<DesignSection />
+			<FloorplansSection />
+			<LocationSection />
+			<TeamSection />
 		</div>
 	);
 }

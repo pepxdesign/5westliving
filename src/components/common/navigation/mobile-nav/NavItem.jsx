@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown";
+
 const NavItem = ({ items, depthLevel, showMenu, setShowMenu }) => {
 	const [dropdown, setDropdown] = useState(false);
 
@@ -47,11 +48,15 @@ const NavItem = ({ items, depthLevel, showMenu, setShowMenu }) => {
 			</button>
 			{dropdown && <Dropdown depthLevel={depthLevel} submenus={items.submenu} dropdown={dropdown} />}
 		</li>
-	) : (
+	) : items.title === "Register" ? (
 		<li className="nav-item" onClick={closeDropdown}>
-			<Link to={items.url}>{items.title}</Link>
+			<a href="#register-form" className="aximo-default-btn aximo-header-btn blue-btn2 btn-register hide-for-now" >
+				<span className="aximo-label-up">Register Now</span>
+				<span className="aximo-label-up">Register Now</span>
+			</a>
 		</li>
-	);
+		
+	) : (<li className="nav-item" onClick={closeDropdown}><Link to={items.url}>{items.title}</Link></li>);
 };
 
 export default NavItem;

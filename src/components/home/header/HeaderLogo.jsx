@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Logo from "../../../assets/images/logo/logo-white.png";
-import LogoDark from "../../../assets/images/logo/logo-dark.png";
+import Logo from "../../../assets/images/logo/logo-white.svg";
+import LogoDark from "../../../assets/images/logo/logo-dark.svg";
 
 function HeaderLogo({scroll}) {
 	return (

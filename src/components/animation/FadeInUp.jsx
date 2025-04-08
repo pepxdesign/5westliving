@@ -10,6 +10,7 @@ const animationVariants = {
 		y: 0,
 		transition: {
 			duration: 0.7,
+			repeat: 0
 		},
 	},
 };

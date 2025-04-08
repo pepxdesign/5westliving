@@ -8,7 +8,7 @@ import LayoutOne from "../components/layout/LayoutOne.jsx";
 // import LayoutThree from "../components/layout/LayoutThree.jsx";
 // import LayoutTwo from "../components/layout/LayoutTwo.jsx";
 import Layout from "../components/layout/index.jsx";
-import ErrorPage from "../error-page";
+// import ErrorPage from "../error-page";
 // import AboutUs from "../page/AboutUs";
 // import ContactUs from "../page/ContactUs";
 // import Pricing from "../page/Pricing";
@@ -20,6 +20,11 @@ import ErrorPage from "../error-page";
 // import SingleBlogPage from "../page/blog/SingleBlog.jsx";
 
 import Home from "../page/home/Home.jsx";
+import Design from "../page/design/Design.jsx";
+import Floorplans from "../page/floorplans/Floorplans.jsx";
+import Location from "../page/location/Location.jsx";
+import Team from "../page/team/index.jsx";
+import PrivacyPolicy from "../page/PrivacyPolicy.jsx";
 // import HomeFive from "../page/home/HomeFive.jsx";
 // import HomeFour from "../page/home/HomeFour.jsx";
 // import HomeOne from "../page/home/HomeOne.jsx";
@@ -50,6 +55,26 @@ export const router = createBrowserRouter([
 					{
 						path: "/",
 						element: <Home />,
+					},
+					{
+						path: "/design",
+						element: <Design />,
+					},
+					{
+						path: "/floorplans",
+						element: <Floorplans />,
+					},
+					{
+						path: "/location",
+						element: <Location />,
+					},
+					{
+						path: "/team",
+						element: <Team />,
+					},
+					{
+						path: "/privacy-policy",
+						element: <PrivacyPolicy />,
 					},
 					{
 						path: "*",

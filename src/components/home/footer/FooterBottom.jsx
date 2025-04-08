@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import LogoWhiteImg from "../../../assets/images/logo/logo-white.png";
+import LogoWhiteImg from "../../../assets/images/logo/logo-white.svg";
 function FooterBottom() {
 	return (
 		<>
@@ -90,7 +90,7 @@ function FooterBottom() {
 						<p> &copy; 2025 Asanti Homes.
 						</p>
 						<span>   |   </span>
-						<Link to="#">Privacy Policy</Link>
+						<Link to="/privacy-policy">Privacy Policy</Link>
 				</div>
 				
 			</div>

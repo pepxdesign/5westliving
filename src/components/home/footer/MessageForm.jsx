@@ -24,12 +24,11 @@ function MessageForm() {
     formState: { errors },
     watch,
     reset,
-    clearErrors
+    clearErrors,
   } = useForm();
 
   const [submitted, setSubmitted] = useState(false); // Tracks if submitted successfully
   const [error, setError] = useState(null); // Optional: show error message
-
 
   const handleFirstNameChange = (e) => {
     const value = e.target.value.replace(/[^a-zA-Z\s]/g, ""); // Allow only letters and spaces
@@ -55,7 +54,6 @@ function MessageForm() {
     setRealtorName(value);
   };
 
-
   // Watch the "workingWithRealtor" field to show/hide realtor name input
   const workingWithRealtor = watch("workingWithRealtor");
 
@@ -67,14 +65,13 @@ function MessageForm() {
   }, [submitted]);
 
   const onSubmit = async (data) => {
-
     let formattedData;
-    if (data && data.workingWithRealtor && data.workingWithRealtor === "No"){
-      formattedData = { ...data, realtorName: ""};
+    if (data && data.workingWithRealtor && data.workingWithRealtor === "No") {
+      formattedData = { ...data, realtorName: "" };
     } else {
       formattedData = { ...data };
     }
-    
+
     try {
       const response = await axios.post(FORMSPREE_URL, formattedData, {
         headers: {
@@ -90,7 +87,7 @@ function MessageForm() {
         setLName(null);
         setRealtorName(null);
 
-        realtorName
+        realtorName;
         setSubmitted(true); // Show success message
         setError(null); // Clear any previous error
 
@@ -107,7 +104,6 @@ function MessageForm() {
     }
   };
 
-
   // Optional: close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -118,7 +114,6 @@ function MessageForm() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
 
   return (
     <>
@@ -172,11 +167,13 @@ function MessageForm() {
           </Field>
         </div>
 
-        <div className="aximo-form-field">
+        <div className="aximo-form-field custom-drop-down">
           {/* Realtor Dropdown */}
           {/* <label className="block font-medium"></label> */}
           <select
-            {...register("workingWithRealtor", { required: "Please select an option" })}
+            {...register("workingWithRealtor", {
+              required: "Please select an option",
+            })}
             className="select-field"
             name="workingWithRealtor"
             id="workingWithRealtor"
@@ -184,29 +181,54 @@ function MessageForm() {
             <option value="">Are you working with a Realtor®?*</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
-            
           </select>
-          {errors.workingWithRealtor && <p className="text-danger">{errors.workingWithRealtor.message}</p>}
+          {errors.workingWithRealtor && (
+            <p className="text-danger">{errors.workingWithRealtor.message}</p>
+          )}
         </div>
 
-        
-          {/* Realtor's Name (Only if Yes is selected) */}
-          {workingWithRealtor === "Yes" && (
-            <div className="aximo-form-field">
-              <input
-                type="text"
-                name="realtorName"
-                id="realtorName"
-                {...register("realtorName", { required: "Realtor's name is required" })}
-                className="realtor-field"
-                placeholder="Realtor's Name"
-                onChange={handleRealtorChange}
-                value={realtorName}
-              />
-              {errors.realtorName && <p className="text-danger">{errors.realtorName.message}</p>}
-            </div>
+        {/* Realtor's Name (Only if Yes is selected) */}
+        {workingWithRealtor === "Yes" && (
+          <div className="aximo-form-field">
+            <input
+              type="text"
+              name="realtorName"
+              id="realtorName"
+              {...register("realtorName", {
+                required: "Realtor's name is required",
+              })}
+              className="realtor-field"
+              placeholder="Realtor's Name"
+              onChange={handleRealtorChange}
+              value={realtorName}
+            />
+            {errors.realtorName && (
+              <p className="text-danger">{errors.realtorName.message}</p>
+            )}
+          </div>
+        )}
+
+        <div className="aximo-form-field custom-drop-down">
+          {/* hearAboutUs Dropdown */}
+          <select
+            {...register("hearAboutUs", {
+              required: "Please select an option",
+            })}
+            className="select-field"
+            name="hearAboutUs"
+            id="hearAboutUs"
+          >
+            <option value="">How did you hear about us?*</option>
+            <option value="Friends and Family">Friends and Family</option>
+            <option value="Realtor">Realtor®</option>
+            <option value="Signage/Walk by/Drive by">Signage / Walk by / Drive by</option>
+            <option value="Online Advertisement">Online Advertisement</option>
+            <option value="Other">Other</option>
+          </select>
+          {errors.hearAboutUs && (
+            <p className="text-danger">{errors.hearAboutUs.message}</p>
           )}
-        
+        </div>
 
         <button id="aximo-submit-btn" type="submit">
           Send Message
