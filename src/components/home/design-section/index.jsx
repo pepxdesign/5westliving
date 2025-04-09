@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import FadeInUp from "../../animation/FadeInUp";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 import data from "../../../data/data.json";
 import Interior1Img from "../../../assets/images/all/interior-1.jpg";
 import Interior2Img from "../../../assets/images/all/interior-2.jpg";
+import Interior1ImgSM from "../../../assets/images/all/mobile/interior-1.jpg";
+import Interior2ImgSM from "../../../assets/images/all/mobile/interior-2.jpg";
 
-function DesignSection() {
+function DesignSection(){
+  const width = useWindowWidth();
+  const isMobile = width <= 500;
+
   const designData = data.design;
   return (
     <div className="section aximo-content-section">
@@ -27,14 +33,14 @@ function DesignSection() {
           </div>
           <div className="col-lg-5">
             <FadeInUp className="aximo-content-thumb3">
-              <img src={Interior1Img} alt="Interior Living Room" />
+              <img src={isMobile ? Interior1ImgSM : Interior1Img} alt="Interior Living Room" />
             </FadeInUp>
           </div>
         </div>
         <div className="row full-width-image">
           <div>
             <FadeInUp className="aximo-content-thumb3">
-              <img src={Interior2Img} alt="Interior Kitchen" />
+              <img src={isMobile ? Interior2ImgSM : Interior2Img}  alt="Interior Kitchen" />
             </FadeInUp>
           </div>
         </div>

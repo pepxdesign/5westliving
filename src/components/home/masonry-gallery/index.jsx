@@ -61,7 +61,7 @@ const GalleryItem = ({ src, text }) => {
     >
       <img src={src} alt={text} className="gallery-image" />
       {/* <p className="gallery-text"></p> */}
-      <span class="aximo-subtitle">{text}</span>
+      <span className="aximo-subtitle">{text}</span>
     </motion.div>
   );
 };

@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
 import FadeInUp from "../../animation/FadeInUp";
+import useWindowWidth from "../../../hooks/useWindowWidth";
 import data from "../../../data/data.json";
 import FP1Img from "../../../assets/images/all/floorplans-1.jpg";
+import FP1ImgSM from "../../../assets/images/all/mobile/floorplans-1.jpg";
 import FP2Img from "../../../assets/images/all/2452-preview.svg";
 
 
 function FloorplansSection() {
+	const width = useWindowWidth();
+  	const isMobile = width <= 500;
+
 	const floorplansData = data.floorplans;
 	return (
 		<div className="section aximo-content-section floorplan-section bg-dark-stone">
@@ -20,7 +25,7 @@ function FloorplansSection() {
 					</div>
 					<div className="col-lg-12">
 						<FadeInUp className="aximo-content-thumb3 full-width-image">
-							<img src={FP1Img} alt="5West Home Front" />
+							<img src={isMobile ? FP1ImgSM  : FP1Img}  alt="5West Home Front" />
 						</FadeInUp>
 					</div>
 				</div>

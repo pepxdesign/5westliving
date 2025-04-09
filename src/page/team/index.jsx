@@ -1,6 +1,8 @@
 // Team member images
 import Hero from "../../components/home/hero";
+import useWindowWidth from "../../hooks/useWindowWidth";
 import HeroBg from "../../assets/images/all/hero-bg5.jpg";
+import HeroBgSM from "../../assets/images/all/mobile/hero-bg5.jpg";
 import TeamGrid from "./TeamGrid";
 
 const heroData = {
@@ -9,9 +11,12 @@ const heroData = {
 };
 
 function Team() {
+  const width = useWindowWidth();
+  const isMobile = width <= 500;
+
   return (
     <div className="aximo-all-section bg-light">
-		<Hero HeroImg={HeroBg} heroData={heroData}/>
+		<Hero HeroImg={isMobile ? HeroBgSM : HeroBg} heroData={heroData}/>
 		<TeamGrid />
 	</div>
   );

@@ -7,7 +7,6 @@ import FP3Img from "../../../assets/images/all/2438.svg";
 import FP4Img from "../../../assets/images/all/2436.svg";
 import FP5Img from "../../../assets/images/all/2430.svg";
 
-
 function FloorplanSelector() {
   const floorplansDetailsData = {
     subtitle: "",
@@ -23,8 +22,9 @@ function FloorplanSelector() {
       bedrooms: "1 Bedroom",
       bedroomsUnit: 1,
       sqft: 587,
-      description: "A thoughtfully designed one-bedroom Garden Home, perfect for singles or couples seeking a stylish and efficient layout with private outdoor space.",
-      image: FP1Img
+      description:
+        "A thoughtfully designed one-bedroom Garden Home, perfect for singles or couples seeking a stylish and efficient layout with private outdoor space.",
+      image: FP1Img,
     },
     {
       id: 2,
@@ -33,8 +33,9 @@ function FloorplanSelector() {
       bedrooms: "3 Bedroom",
       bedroomsUnit: 3,
       sqft: 1155,
-      description: "Spacious and bright, this three-bedroom Garden Home offers ample living space and a seamless connection to nature, ideal for growing families or those who love to entertain.",
-      image: FP2Img
+      description:
+        "Spacious and bright, this three-bedroom Garden Home offers ample living space and a seamless connection to nature, ideal for growing families or those who love to entertain.",
+      image: FP2Img,
     },
     {
       id: 3,
@@ -43,8 +44,9 @@ function FloorplanSelector() {
       bedrooms: "3 Bedroom",
       bedroomsUnit: 3,
       sqft: 1593,
-      description: "Experience elevated townhome living in this three-bedroom residence featuring an open-concept main floor, expansive windows, and refined modern finishes.",
-      image: FP3Img
+      description:
+        "Experience elevated townhome living in this three-bedroom residence featuring an open-concept main floor, expansive windows, and refined modern finishes.",
+      image: FP3Img,
     },
     {
       id: 4,
@@ -53,8 +55,9 @@ function FloorplanSelector() {
       bedrooms: "4 Bedroom",
       bedroomsUnit: 4,
       sqft: 1651,
-      description: "A rare four-bedroom townhome offering generous square footage, multiple levels of living, and flexible space for families or remote work setups.",
-      image: FP4Img
+      description:
+        "A rare four-bedroom townhome offering generous square footage, multiple levels of living, and flexible space for families or remote work setups.",
+      image: FP4Img,
     },
     {
       id: 5,
@@ -63,9 +66,10 @@ function FloorplanSelector() {
       bedrooms: "3 Bedroom",
       bedroomsUnit: 3,
       sqft: 1471,
-      description: "Enjoy the privacy of a detached home with the convenience of townhome living in this beautifully crafted three-bedroom residence, complete with premium finishes and a private entrance.",
-      image: FP5Img
-    }
+      description:
+        "Enjoy the privacy of a detached home with the convenience of townhome living in this beautifully crafted three-bedroom residence, complete with premium finishes and a private entrance.",
+      image: FP5Img,
+    },
   ];
 
   const filters = [
@@ -103,12 +107,10 @@ function FloorplanSelector() {
               <button
                 key={index}
                 onClick={() => {
-                  setSelectedFilter(filter)
+                  setSelectedFilter(filter);
                 }}
                 className={`aximo-default-btn aximo-pricing-btn ${
-                  selectedFilter?.label === filter.label
-                    ? "selected"
-                    : ""
+                  selectedFilter?.label === filter.label ? "selected" : ""
                 }`}
               >
                 {filter.label}
@@ -116,15 +118,12 @@ function FloorplanSelector() {
             ))}
           </div>
 
-
-
           <div className="floorplan-results">
-          <AnimatePresence>
-          {filteredFloorplans.map((plan, index) => (
-              <FloorplanCard key={index} plan={plan}/>
-            ))}
-          </AnimatePresence>
-            
+            <AnimatePresence>
+              {filteredFloorplans.map((plan, index) => (
+                <FloorplanCard key={index} plan={plan} />
+              ))}
+            </AnimatePresence>
           </div>
         </div>
       </div>
