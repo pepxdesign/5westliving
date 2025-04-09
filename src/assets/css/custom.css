@@ -89,6 +89,11 @@ textarea {
   margin: 0;
 }
 
+.tall-image img{
+  aspect-ratio: unset !important;
+  height: auto;
+}
+
 .mobile-navbar ul li a,
 .mobile-navbar ul li button {
   color: var(--body-color);

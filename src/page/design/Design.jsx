@@ -23,7 +23,7 @@ import DesignImg5SM from "../../assets/images/all/mobile/design-5.jpg";
 import DesignImg6SM from "../../assets/images/all/mobile/design-6.jpg";
 import DesignImg7SM from "../../assets/images/all/mobile/design-7.jpg";
 import DesignImg8SM from "../../assets/images/all/mobile/design-8.jpg";
-// import DesignImg9SM from "../../assets/images/all/mobile/design-9.jpg";
+import DesignImg9SM from "../../assets/images/all/mobile/design-9.jpg";
 
 const heroData = {
   title: "A HOME LIKE NO OTHER",
@@ -54,6 +54,8 @@ function Design() {
         return isMobile ? DesignImg7SM : DesignImg7;
       case "DesignImg8":
         return isMobile ? DesignImg8SM : DesignImg8;
+      case "DesignImg9":
+          return isMobile ? DesignImg9SM : DesignImg9;
       default:
         text = "Looking forward to the Weekend";
         break;
@@ -158,14 +160,13 @@ function Design() {
             </div>
           </div>
           <div className="row split-media">
-            <div className="col-lg-6 order-2">
-              <FadeInUp className="aximo-content-thumb3">
-                <img src={DesignImg9} alt="Interior Living Room" />
+            <div className="col-lg-4 order-2 order-lg-1">
+              <FadeInUp className="aximo-content-thumb3 tall-image">
+                <img src={getImgSrc("DesignImg9")} alt="Interior Living Room" />
               </FadeInUp>
             </div>
-            <div className="col-lg-6 d-flex order-1">
+            <div className="col-lg-8 d-flex order-1 order-lg-2">
               <div className="aximo-default-content libre-font">
-                {/* <h2>{designData.title}</h2> */}
                 <p>
                   Paired with generously sized bathrooms—featuring wide
                   vanities, clean modern finishes, and plenty of room to
