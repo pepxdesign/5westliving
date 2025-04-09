@@ -21,16 +21,16 @@ function FooterBottom() {
 								</div>
 								<ul>
 									<li>
-										<Link to="#">Design</Link>
+										<Link to="/design">Design</Link>
 									</li>
 									<li>
-										<Link to="#">Location</Link>
+										<Link to="/location">Location</Link>
 									</li>
 									<li>
-										<Link to="#">Floormaps</Link>
+										<Link to="/floorplans">Floorplans</Link>
 									</li>
 									<li>
-										<Link to="#">Team</Link>
+										<Link to="/team">Team</Link>
 									</li>
 								</ul>
 							</div>
