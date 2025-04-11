@@ -83,7 +83,6 @@ function Design() {
           <div className="row split-media">
             <div className="col-lg-6 d-flex">
               <div className="aximo-default-content libre-font">
-                {/* <h2>{designData.title}</h2> */}
                 <p>
                   These thoughtfully designed apartments feature warm natural
                   wood finishes, sleek stone countertops, and high-end

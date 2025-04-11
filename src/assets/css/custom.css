@@ -1285,6 +1285,11 @@ header.aximo-header-section.aximo-header7.sticky-menu
 
 /* Tablet Layout */
 @media (min-width: 576px) and (max-width: 991px) {
+
+  .aximo-footer-menu.light-one.m-0{
+    margin-bottom: 40px !important;
+  }
+
   .privacy-policy .aximo-hero-content5.team-grid-header {
     padding: 0;
   }
