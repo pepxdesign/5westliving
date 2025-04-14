@@ -6,7 +6,7 @@ function HeaderLogo({scroll}) {
 	return (
 		<div className="brand-logo">
 			<Link to="/">
-				<img src={scroll ? LogoDark : Logo} alt="Logo" className="light-version-logo" />
+				<img src={scroll ? LogoDark : Logo} alt="5Westliving Logo" className="light-version-logo" />
 			</Link>
 		</div>
 	);

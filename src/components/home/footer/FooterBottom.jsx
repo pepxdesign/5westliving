@@ -10,7 +10,7 @@ function FooterBottom() {
 						<div className="col-xl-4 col-lg-12">
 							<div className="aximo-footer-textarea light-one">
 								<Link to="/">
-									<img src={LogoWhiteImg} alt="Logo" />
+									<img src={LogoWhiteImg} alt="5Westliving Logo" />
 								</Link>
 							</div>
 						</div>

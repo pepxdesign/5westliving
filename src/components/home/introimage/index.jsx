@@ -10,7 +10,7 @@ function IntroImage() {
 
 	return (
 		<FadeInUp className="aximo-video-section2 extra-side-margin">
-			<img src={isMobile ? ImageBgSM : ImageBg} alt="Vancouver city" />	
+			<img src={isMobile ? ImageBgSM : ImageBg} alt="5West Dinning Room Rendering" />	
 		</FadeInUp>
 	);
 }

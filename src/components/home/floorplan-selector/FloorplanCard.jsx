@@ -11,7 +11,7 @@ function FloorplanCard({ plan }) {
       className="floorplan-card"
     >
       <div className="floorplan-img-wrapper">
-        <img src={plan.image} alt={plan.description} className="w-full" />
+        <img src={plan.image} alt={plan.alt} className="w-full" />
       </div>
       <div className="floorplan-details">
         <h3>{plan.unit}</h3>

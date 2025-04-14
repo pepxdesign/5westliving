@@ -25,14 +25,14 @@ function FloorplansSection() {
 					</div>
 					<div className="col-lg-12">
 						<FadeInUp className="aximo-content-thumb3 full-width-image">
-							<img src={isMobile ? FP1ImgSM  : FP1Img}  alt="5West Home Front" />
+							<img src={isMobile ? FP1ImgSM  : FP1Img}  alt="Rendering of 5West main unit front" />
 						</FadeInUp>
 					</div>
 				</div>
 				<div className="row mt-25">
 					<div className="col-lg-5">
 						<FadeInUp className="aximo-content-thumb3">
-							<img src={FP2Img} alt="5West Home Floorplan" />
+							<img src={FP2Img} alt="2452 3 Bedroom Floorplan" />
 						</FadeInUp>
 					</div>
 					<div className="col-lg-7 d-flex align-items-center">

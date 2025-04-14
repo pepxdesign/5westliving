@@ -654,6 +654,9 @@ header.aximo-header-section.aximo-header7.sticky-menu
   display: flex;
   justify-content: center;
 }
+.aximo-team-wrap .aximo-team-thumb{
+	border-radius: 0 !important;
+}
 
 .design-title-center h2,
 .team-grid-header h2,

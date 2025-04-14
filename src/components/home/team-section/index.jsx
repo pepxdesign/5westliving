@@ -33,19 +33,22 @@ import TeamLogo3 from "../../../assets/images/all/team-3.png";
 
 const teamMembers = [
 	{
-	  "id": "t01",
-	  "name": "Asanti",
-	  "img": TeamLogo1
+	  id: "t01",
+	  name: "Asanti",
+	  img: TeamLogo1,
+	  alt: "Asanti Homes Logo"
 	},
 	{
-	  "id": "t02",
-	  "name": "Realtor",
-	  "img": TeamLogo2
+	  id: "t02",
+	  name: "Realtor",
+	  img: TeamLogo2,
+	  alt: "Sean Stevens Logo"
 	},
 	{
-	  "id": "t03",
-	  "name": "Arch",
-	  "img": TeamLogo3
+	  id: "t03",
+	  name: "Arch",
+	  img: TeamLogo3,
+	  alt: "Architectural Collective Logo"
 	}
   ]
 

@@ -25,6 +25,7 @@ function FloorplanSelector() {
       description:
         "A thoughtfully designed one-bedroom Garden Home, perfect for singles or couples seeking a stylish and efficient layout with private outdoor space.",
       image: FP1Img,
+      alt: "2432 1 Bedroom Floorplan"
     },
     {
       id: 2,
@@ -36,6 +37,7 @@ function FloorplanSelector() {
       description:
         "Spacious and bright, this three-bedroom Garden Home offers ample living space and a seamless connection to nature, ideal for growing families or those who love to entertain.",
       image: FP2Img,
+      alt: "2452 3 Bedroom Floorplan"
     },
     {
       id: 3,
@@ -47,6 +49,7 @@ function FloorplanSelector() {
       description:
         "Experience elevated townhome living in this three-bedroom residence featuring an open-concept main floor, expansive windows, and refined modern finishes.",
       image: FP3Img,
+      alt: "2438 3 Bedroom Floorplan"
     },
     {
       id: 4,
@@ -58,6 +61,7 @@ function FloorplanSelector() {
       description:
         "A rare four-bedroom townhome offering generous square footage, multiple levels of living, and flexible space for families or remote work setups.",
       image: FP4Img,
+      alt: "2436 4 Bedroom Floorplan"
     },
     {
       id: 5,
@@ -69,6 +73,7 @@ function FloorplanSelector() {
       description:
         "Enjoy the privacy of a detached home with the convenience of townhome living in this beautifully crafted three-bedroom residence, complete with premium finishes and a private entrance.",
       image: FP5Img,
+      alt: "2430 3 Bedroom Floorplan"
     },
   ];
 

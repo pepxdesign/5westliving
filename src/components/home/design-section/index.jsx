@@ -33,14 +33,14 @@ function DesignSection(){
           </div>
           <div className="col-lg-5">
             <FadeInUp className="aximo-content-thumb3">
-              <img src={isMobile ? Interior1ImgSM : Interior1Img} alt="Interior Living Room" />
+              <img src={isMobile ? Interior1ImgSM : Interior1Img} alt="Rendering of the wood-finished dining room at 5West" />
             </FadeInUp>
           </div>
         </div>
         <div className="row full-width-image">
           <div>
             <FadeInUp className="aximo-content-thumb3">
-              <img src={isMobile ? Interior2ImgSM : Interior2Img}  alt="Interior Kitchen" />
+              <img src={isMobile ? Interior2ImgSM : Interior2Img}  alt="Rendering of the living room at 5West" />
             </FadeInUp>
           </div>
         </div>

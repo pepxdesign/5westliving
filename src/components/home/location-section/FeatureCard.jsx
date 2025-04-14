@@ -1,8 +1,8 @@
-function FeatureCard({ location: { title, img } }) {
+function FeatureCard({ location: { img, alt } }) {
 	return (
 		<div className="aximo-iconbox-wrap7">
 			<div className="aximo-iconbox-icon7">
-				<img src={img} alt={title} />
+				<img src={img} alt={alt} />
 			</div>
 		</div>
 	);

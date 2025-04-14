@@ -20,16 +20,19 @@ function LocationSection() {
       id: crypto.randomUUID(),
       title: "Restaurants",
       img: isMobile ? Location1ImgSM : Location1Img,
+      alt: "Okini Restaurant & Bar"
     },
     {
       id: crypto.randomUUID(),
       title: "Golf Courses",
       img: isMobile ? Location2ImgSM : Location2Img,
+      alt: "Marine Drive Golf Club"
     },
     {
       id: crypto.randomUUID(),
       title: "Parks",
       img: isMobile ? Location3ImgSM : Location3Img,
+      alt: "VanDusen Botanical Garden"
     },
   ];
 
