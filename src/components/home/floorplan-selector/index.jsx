@@ -10,8 +10,8 @@ import FP5Img from "../../../assets/images/all/2430.svg";
 function FloorplanSelector() {
   const floorplansDetailsData = {
     subtitle: "",
-    title: "Some title about floorplans",
-    text: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+    title: "Designed for the Way You Live",
+    text: "Our floorplans go beyond layout, offering an elevated living experience where function meets beauty. Whether you're hosting friends in a spacious open-concept kitchen or unwinding with a view, these residences are designed to adapt, grow, and move with you.",
   };
 
   const floorplans = [
