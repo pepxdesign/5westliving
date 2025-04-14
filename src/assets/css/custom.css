@@ -2,6 +2,9 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   letter-spacing: 0.02rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -267,6 +270,11 @@ header.aximo-header-section.aximo-header7.sticky-menu .site-menu-main .nav-link-
   font-size: 0.75rem;
   width: unset;
   text-transform: uppercase;
+  padding: 4px 40px;
+  height: fit-content;
+  color: var(--body-color) !important;
+  border: 0.1rem solid var(--body-color);
+  line-height: normal;
 }
 
 .aximo-pricing-btn:hover {
@@ -312,6 +320,19 @@ header.aximo-header-section.aximo-header7.sticky-menu .site-menu-main .nav-link-
   border-radius: 40rem;
   font-family: "TyrosPro", Arial, sans-serif;
   /* ADD BOLDER FONT FOR BUTTON */
+}
+
+.aximo-default-btn.aximo-header-btn{
+  height: 28px;
+	line-height: normal;
+	padding: 4px 40px;
+  width: fit-content;
+}
+.aximo-default-btn .aximo-label-up {
+  top: 1px;
+}
+.aximo-default-btn:hover .aximo-label-up {
+	top: calc(-100% + 1px);
 }
 
 .aximo-default-btn.aximo-header-btn.blue-btn2 {
@@ -698,6 +719,7 @@ header.aximo-header-section.aximo-header7.sticky-menu
   border: unset;
   width: unset;
   border: unset;
+  font-size: 0.75rem;
   font-family: "TyrosPro", Arial, sans-serif;
   border-radius: 40rem;
   box-shadow: unset;
@@ -705,7 +727,8 @@ header.aximo-header-section.aximo-header7.sticky-menu
   justify-content: unset;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 0px 40px;
+  padding: 4px 40px;
+	height: fit-content;
 }
 
 .aximo-footer-menu,
@@ -843,7 +866,7 @@ header.aximo-header-section.aximo-header7.sticky-menu
 
 .floorplan-selector-container .floorplan-results .floorplan-img-wrapper img {
   max-width: 80%;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .floorplan-selector-container .floorplan-results .floorplan-details {
@@ -1094,10 +1117,9 @@ header.aximo-header-section.aximo-header7.sticky-menu
     text-align: left;
   }
   .aximo-default-btn {
-    padding: 0px 28px;
-    padding: 0px 28px;
-    height: 2.6rem;
-    line-height: 2.5rem;
+    padding: 1.4px 32px;
+    height: fit-content;
+    line-height: normal;
     vertical-align: middle;
   }
 
@@ -1172,12 +1194,16 @@ header.aximo-header-section.aximo-header7.sticky-menu
   }
 
   #aximo-submit-btn {
-    padding: 0px 28px;
-    height: 2.6rem;
-    line-height: 2.5rem;
+    padding: 1.4px 32px;
+    height: fit-content;
+    line-height: normal;
     vertical-align: middle;
     font-size: 0.75rem;
   }
+
+
+
+
   .aximo-footer-menu {
     margin-bottom: 3rem !important;
   }
@@ -1285,6 +1311,12 @@ header.aximo-header-section.aximo-header7.sticky-menu
 
 /* Tablet Layout */
 @media (min-width: 576px) and (max-width: 991px) {
+
+  .aximo-default-btn, 
+  #aximo-submit-btn {
+    padding: 1px 20px;
+    height: fit-content;
+  }
 
   .aximo-footer-menu.light-one.m-0{
     margin-bottom: 40px !important;

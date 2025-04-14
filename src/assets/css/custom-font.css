@@ -10,13 +10,11 @@
 
 @font-face {
     font-family: 'TyrosPro';
-    src: url('../fonts/TyrosPro/TyrosPro-Regular.eot');
-    src: url('../fonts/TyrosPro/TyrosPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/TyrosPro/TyrosPro-Regular.woff2') format('woff2'),
+    /* src: url('../fonts/TyrosPro/TyrosPro-Regular.eot'); */
+    src: url('../fonts/TyrosPro/TyrosPro-Regular.woff2') format('woff2'),
         url('../fonts/TyrosPro/TyrosPro-Regular.woff') format('woff'),
         url('../fonts/TyrosPro/TyrosPro-Regular.ttf') format('truetype'),
         url('../fonts/TyrosPro/TyrosPro-Regular.svg#TyrosPro-Regular') format('svg');
-    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
